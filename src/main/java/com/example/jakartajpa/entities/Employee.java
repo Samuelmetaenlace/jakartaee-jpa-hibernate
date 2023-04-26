@@ -16,6 +16,7 @@ public class Employee {
 
     private Integer age;
 
+    //Con JsonbTransient ignoramos esto en el json que se genera al realizar la consulta. Sirve para relaciones many to many
     @JsonbTransient
     @OneToOne
     @JoinColumn(name = "direction_id")
